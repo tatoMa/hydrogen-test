@@ -133,26 +133,61 @@ function TemplateLinks() {
  */
 export default function Welcome() {
   return (
-    <div className="text-gray-900 pt-16 rounded-[40px] my-16 px-4 xl:px-12 bg-gradient-to-b from-white -mx-4 xl:-mx-12">
-      <div className="text-center mb-16">
-        <h1 className="font-extrabold mb-4 text-5xl md:text-7xl">
-          Hello, Hydrogen
-        </h1>
-        <p className="text-lg mb-8">
-          Welcome to your custom storefront. Let&rsquo;s get building.
-        </p>
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 text-gray-700">
-          <DocsButton
-            url="https://shopify.dev/custom-storefronts/hydrogen"
-            label="Browse Hydrogen documentation"
-          />
-          <DocsButton url="/graphql" label="Open the GraphiQL explorer" />
-          <DocsButton
-            url="https://github.com/Shopify/hydrogen-examples"
-            label="Explore Hydrogen examples"
-          />
+    <div className="text-stone-100 rounded-[40px] -mt-20">
+      <div>
+        <img
+          src="https://uploads-ssl.webflow.com/6101366c480baf4003cb7546/6217596f8fdf68d396d61ae9_CARILLON%5B000-180%5D1402.jpg"
+          alt="hero image"
+          className=" object-cover"
+        />
+        <div className="absolute text-center top-40 font-Holtwood text-8xl w-full">
+          NEON STORE
         </div>
       </div>
+
+      <div className="bg-[rgb(241,235,230)] h-[70vh] flex flex-col justify-center items-center">
+        <span className="text-stone-800 text-7xl text-center font-Holtwood mx-32 mt-40 leading-tight">
+          Dal 1781{' '}
+          <img
+            className="inline -rotate-[10deg] w-36"
+            src="https://uploads-ssl.webflow.com/6101366c480baf4003cb7546/62053498da9cb81272b9259a_61fd4034e17de6c416b2b7b2_Storia-1718-2.png"
+            alt=""
+          />{' '}
+          amore e dedizione per la coltivazione e la produzione delle più
+          pregiate{' '}
+          <img
+            className="inline rotate-[10deg] h-28"
+            src="https://uploads-ssl.webflow.com/6101366c480baf4003cb7546/620534a2ba351aaca29298a9_61fd403f9d62f0480fb4180a_Storia-1933.png"
+            alt=""
+          />{' '}
+          varietà di olive.
+        </span>
+        <button className="my-16 block text-stone-800 text-sm border rounded-[50%] border-stone-800 px-6 py-4 hover:text-stone-100 hover:bg-stone-800 hover:scale-110 duration-500">
+          LA NOSTRA STORIA
+        </button>
+      </div>
+      <div className="h-[200vh] bg-cover w-full flex flex-col justify-center items-center bg-[url(https://uploads-ssl.webflow.com/6101366c480baf4003cb7546/61923927d187504b657f78bf_Untitled-1.jpg)]">
+        <span className="text-stone-800 text-[14rem] text-center leading-[0.8]">
+          UN OLIO ANTICO
+        </span>
+        <img
+          className=" h-[40rem] hover:rotate-[4deg] duration-500 cursor-pointer"
+          src="https://uploads-ssl.webflow.com/610136a03296734e45ef3756/618542e73e69d6b38e8fce4c_bottiglia-prodotti.png"
+          alt=""
+        />
+        <button className="my-16 block text-stone-800 text-sm border rounded-[50%] border-stone-800 px-6 py-4 hover:text-stone-100 hover:bg-stone-800 hover:scale-110 duration-500">
+          ACQUISTA ORA
+        </button>
+      </div>
+
+      <iframe
+        src="https://player.vimeo.com/video/673704701?background=1"
+        className="w-full h-screen object-cover"
+        frameborder="0"
+        allow="autoplay; fullscreen; picture-in-picture"
+        allowfullscreen=""
+      ></iframe>
+
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
         <Suspense fallback={<BoxFallback />}>
           <StorefrontInfo />

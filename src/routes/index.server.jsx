@@ -15,7 +15,8 @@ import {Suspense} from 'react';
 
 export default function Index({country = {isoCode: 'US'}}) {
   return (
-    <Layout hero={<GradientBackground />}>
+    // <Layout hero={<GradientBackground />}>
+    <Layout>
       <Suspense fallback={null}>
         <SeoForHomepage />
       </Suspense>

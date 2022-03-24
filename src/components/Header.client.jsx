@@ -23,14 +23,14 @@ export default function Header({collections, storeName}) {
   }, [isCartOpen]);
 
   return (
-    <header className="h-20 lg:h-32" role="banner">
+    <header className="h-16" role="banner">
       <div
-        className={`fixed z-20 h-20 lg:h-32 w-full border-b border-gray-200 px-6 md:px-8 md:py-6 lg:pt-8 lg:pb-0 mx-auto bg-white ${
+        className={`fixed z-20 h-16 w-full px-6 md:px-8 py-3 lg:pb-0 mx-auto bg-neutral-800 ${
           isMobileNavOpen ? '' : 'bg-opacity-95'
         }`}
       >
         <div
-          className="h-full flex lg:flex-col place-content-between"
+          className="h-full flex lg:flex-col place-content-between text-stone-100"
           style={{
             paddingRight: isCartOpen ? scrollbarWidth : 0,
           }}
@@ -43,7 +43,7 @@ export default function Header({collections, storeName}) {
               setIsOpen={setIsMobileNavOpen}
             />
             <Link
-              className="font-black uppercase text-3xl tracking-widest"
+              className="uppercase text-3xl tracking-widest font-[Holtwood] "
               to="/"
             >
               {storeName}

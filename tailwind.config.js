@@ -1,6 +1,9 @@
 module.exports = {
   content: ['./index.html', './src/**/*.{js,jsx,ts,tsx}'],
   theme: {
+    fontFamily: {
+      Holtwood: ['Holtwood One SC', 'serif'],
+    },
     extend: {
       typography: (theme) => ({
         DEFAULT: {
